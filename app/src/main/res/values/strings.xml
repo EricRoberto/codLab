@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">My Dice Roler</string>
+    <string name="roll_name">Roll</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="button_clicked">Button clicked</string>
+    <string name="number_one">1</string>
 </resources>
