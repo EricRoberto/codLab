@@ -1,0 +1,1 @@
+C:\Users\Eric\AndroidStudioProjects\KotlinFundamentals\buildSrc\build\classes\kotlin\main\Libs.class;C:\Users\Eric\AndroidStudioProjects\KotlinFundamentals\buildSrc\build\classes\kotlin\main\TestLibs.class;C:\Users\Eric\AndroidStudioProjects\KotlinFundamentals\buildSrc\build\classes\kotlin\main\Versions.class
