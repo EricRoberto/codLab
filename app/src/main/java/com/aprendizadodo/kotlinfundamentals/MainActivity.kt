@@ -12,30 +12,30 @@ class MainActivity : AppCompatActivity() {
 
         roll_button.setOnClickListener { rollDice() }
 
-        add_button.setOnClickListener { addOne() }
+        clear_button.setOnClickListener { clearDice() }
+
+    }
+
+    private fun clearDice(){
+        dice_image.setImageResource(R.drawable.empty_dice)
+        dice_image2.setImageResource(R.drawable.empty_dice)
     }
 
     private fun rollDice() {
 
-        val randomInt = (1..6).random()
-        result_text.text = randomInt.toString()
-        Toast.makeText(this, getString(R.string.button_clicked), Toast.LENGTH_SHORT).show()
+        dice_image.setImageResource(sortDice())
+        dice_image2.setImageResource(sortDice())
     }
 
-    private fun addOne() {
-        with(result_text) {
-            if (text == getString(R.string.hello_world)) {
+    private fun sortDice(): Int{
 
-                text = context.getString(R.string.number_one)
-
-            } else if (text.toString().toInt() < 6) {
-                val addValue = text.toString().toInt() + 1
-
-                text = addValue.toString()
-            }
-
+        return when((1..6).random()){
+            1 -> R.drawable.dice_1
+            2 -> R.drawable.dice_2
+            3 -> R.drawable.dice_3
+            4 -> R.drawable.dice_4
+            5 -> R.drawable.dice_5
+            else -> R.drawable.dice_6
         }
-
-
     }
 }
